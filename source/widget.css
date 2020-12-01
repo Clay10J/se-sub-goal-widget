@@ -1,0 +1,48 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@500&display=swap');
+
+/* Variables */
+:root {
+  --color-primary: {{colorPrimary}};
+  --border-radius: {{borderRadius}}px;
+
+  --font-primary: {{fontColorPrimary}};
+  --font-name: {{fontName}};
+  --font-size: {{fontSize}}px;
+  --font-transform: unset;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.widget-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 10vh;
+  width: 30vw;
+  background-color: var(--color-primary);
+  border-radius: var(--border-radius);
+}
+
+.text {
+  font-size: var(--font-size);
+  font-family: var(--font-name);
+  color: var(--font-primary);
+  max-width: 95%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
