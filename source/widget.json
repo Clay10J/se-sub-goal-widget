@@ -1,0 +1,64 @@
+{
+  "incrementValue": {
+    "type": "number",
+    "label": "Increment Value",
+    "value": 10,
+    "min": 0,
+    "max": 100000,
+    "step": 1
+   },
+   "decrementThreshold": {
+    "type": "number",
+    "label": "Decrement threshold",
+    "value": 50,
+    "min": 0,
+    "max": 100000,
+    "step": 1
+   },
+   "goalCount": {
+     "type": "number",
+     "label": "Sub Goal Count",
+     "value": 1,
+     "min": 0,
+     "max": 100000,
+     "step": 1
+   },
+   "colorPrimary": {
+    "type": "colorpicker",
+    "label": "Primary color",
+    "value": "#FFE4A8",
+    "group": "Background"
+  },
+  "borderRadius": {
+    "type": "number",
+    "label": "Border Radius (px)",
+    "value": 20,
+    "group": "Background"
+  },
+  "fontName": {
+    "type": "googleFont",
+    "label": "Select a font:",
+    "value": "Roboto",
+    "group": "Font"
+  },
+  "fontSize": {
+    "type": "number",
+    "label": "Font Size (px)",
+    "value": 50,
+    "group": "Font"
+  },
+  "fontColorPrimary": {
+    "type": "colorpicker",
+    "label": "Primary font color",
+    "value": "#2200FF",
+    "group": "Font"
+  },
+   "widgetName": {
+     "type": "hidden",
+     "value": "Sub Goal Widget"
+   },
+   "widgetAuthor": {
+     "type": "hidden",
+     "value": "YMCClay"
+   }
+ }
