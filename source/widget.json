@@ -47,6 +47,39 @@
     "value": 50,
     "group": "Font"
   },
+  "fontStyle": {
+    "type": "dropdown",
+    "label": "Select a font style:",
+    "value": "normal",
+    "options": {
+      "normal": "Normal",
+      "italic": "Italic",
+      "oblique": "Oblique"
+    },
+    "group": "Font"
+  },
+  "fontWeight": {
+    "type": "dropdown",
+    "label": "Select a font weight:",
+    "value": "normal",
+    "options": {
+      "normal": "Normal",
+      "bold": "Bold",
+      "bolder": "Bolder",
+      "lighter": "Lighter"
+    },
+    "group": "Font"
+  },
+  "fontVariant": {
+    "type": "dropdown",
+    "label": "Select a font variant:",
+    "value": "normal",
+    "options": {
+      "normal": "Normal",
+      "small-caps": "Small-Caps"
+    },
+    "group": "Font"
+  },
   "fontColorPrimary": {
     "type": "colorpicker",
     "label": "Primary font color",

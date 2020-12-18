@@ -1,5 +1,5 @@
 /* Import */
-@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family={{fontName}}");
 
 /* Variables */
 :root {
@@ -10,6 +10,9 @@
   --font-name: {{fontName}};
   --font-size: {{fontSize}}px;
   --font-transform: unset;
+  --font-style: {{fontStyle}};
+  --font-weight: {{fontWeight}};
+  --font-variant: {{fontVariant}};
 }
 
 html,
@@ -41,6 +44,9 @@ body {
   font-size: var(--font-size);
   font-family: var(--font-name);
   color: var(--font-primary);
+  font-style: var(--font-style);
+  font-weight: var(--font-weight);
+  font-variant: var(--font-variant);
   max-width: 95%;
   text-overflow: ellipsis;
   white-space: nowrap;
