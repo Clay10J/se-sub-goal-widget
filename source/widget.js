@@ -42,10 +42,8 @@ function playUpdate() {
 }
 
 function updateCounts() {
-  if (state.currentCount >= state.goalCount) {
-    state.goalCount = state.currentCount + settings.incrementValue;
-  } else if ((state.goalCount - state.currentCount) > settings.decrementThreshold) {
-    state.goalCount = state.currentCount + settings.incrementValue;
+  if ((state.currentCount >= state.goalCount) || ((state.goalCount - state.currentCount) > settings.decrementThreshold)) {
+    state.goalCount = Math.round((state.currentCount + settings.incrementValue) / 10) * 10; // Rounds goal count to nearest 10
   }
 
   playUpdate();
