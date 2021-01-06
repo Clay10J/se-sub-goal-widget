@@ -61,8 +61,8 @@ window.addEventListener('onWidgetLoad', function(obj) {
   settings.incrementValue = fieldData.incrementValue;
   settings.decrementThreshold = fieldData.decrementThreshold;
 
-  if (obj.detail.session.data["subscriber-total"].amount) {
-    state.currentCount = obj.detail.session.data["subscriber-total"].amount;
+  if (obj.detail.session.data["subscriber-total"].count) {
+    state.currentCount = obj.detail.session.data["subscriber-total"].count;
   }
   
   if (fieldData.goalCount > state.goalCount) {
