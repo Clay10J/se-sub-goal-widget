@@ -73,10 +73,16 @@ window.addEventListener('onWidgetLoad', function(obj) {
 // On new event received
 window.addEventListener('onEventReceived', function(obj) {
   const listener = obj.detail.listener;
+  const event = obj.detail.event;
 
   if (listener === "subscriber-latest") {
-    state.currentCount++;
-
-    updateCounts();
+    if (event.bulkGifted) {
+      state.currentCount += event.amount;
+      updateCounts();
+    }
+    else if (!event.isCommunityGift) {
+      state.currentCount++;
+      updateCounts();
+    }
   }
 });
